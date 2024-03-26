@@ -66,7 +66,7 @@
     const getLocalStorageInfiniteCraftData = () => JSON.parse(localStorage.getItem("infinite-craft-data")).elements;
     const getPair = () => pairs.get([...pairs.entries()].at(Math.floor(Math.random()*pairs.size))[0]);
     
-        for (let i = 0; i < getLocalStorageInfiniteCraftData().length; i++) {
+        for (let i = 0; i < 50; i++) {
             await setPair();
         }
 })();
